@@ -217,7 +217,7 @@ chain = MultiPromptChain(
 # Streamlit UI
 
 st.set_page_config(page_title="Gini Nutritionist Chatbot")
-st.title("Gini Nutritionist Chatbot")
+st.title("NutriGINI: Generative Informational Nutritional Initiative")
 st.write("Ask anything related to nutrition, recipes, meal plans, and more!")
 # st.write("Made by Swapnil, Shahrukh, and Aakash!")
 
@@ -238,4 +238,6 @@ if st.button("Submit Further Query"):
     further_finished_chain = chain.run(decision + further_query2 + input_guard + nutrient_feature)
     st.markdown(further_finished_chain, unsafe_allow_html=True)
 
-st.write("<p style='text-align: center;'><i>Made by Swapnil, Shahrukh, and Aakash!</i></p>", unsafe_allow_html=True)
+# st.write("<p style='text-align: center;'><i>Made by Swapnil, Shahrukh, and Akash!</i></p>", unsafe_allow_html=True)
+st.write("<p style='text-align: center;'><i>Made by <a href='https://www.linkedin.com/in/swapniljha001/'>Swapnil Jha</a>, Shahrukh, and Akash!</i></p>", unsafe_allow_html=True)
+
